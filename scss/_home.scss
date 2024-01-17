@@ -88,6 +88,7 @@
 
 .s-card-neon {
   padding-top: 12.9rem;
+  display: none;
   .container {
     @include flex(row, flex-start, space-between);
     .left-area {
@@ -244,6 +245,7 @@
 
 .s-depoimentos {
   padding-top: 13.4rem;
+  display: none;
   .top {
     margin-bottom: 4rem;
     @include flex(row, flex-end, space-between);
@@ -281,6 +283,7 @@
 .s-conta-digital {
   padding-top: 12.7rem;
   padding-bottom: 8.5rem;
+  display: none;
   .container {
     display: flex;
     align-items: center;
