@@ -24,4 +24,7 @@
     font-weight: 400;
     line-height: 150%; /* 27px */
   }
+  @include responsive(480px) {
+    height: 25.3rem;
+  }
 }
