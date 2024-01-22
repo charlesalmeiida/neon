@@ -5,6 +5,7 @@
   border-radius: 0.8rem;
   height: 20.9rem;
   padding: 3.7rem 3.2rem 2.3rem 3.2rem;
+  cursor: grab;
   .user {
     @include flex(row, center, space-between);
     margin-bottom: 2.1rem;

@@ -1,7 +1,6 @@
 footer {
   padding-top: 4.9rem;
   background-color: $brand-blue;
-  display: none;
   .container {
     .top {
       @include flex(row, center, space-between);
