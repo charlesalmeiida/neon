@@ -77,12 +77,14 @@
           left: 0;
           z-index: 3;
           max-width: 43.5rem;
+          animation: floating 6s infinite;
         }
         .card-back {
           right: 8.6rem;
           z-index: 2;
           bottom: 4.6rem;
           max-width: 35.3rem;
+          animation: floatingBack 6s infinite;
         }
       }
     }
@@ -830,5 +832,29 @@
         }
       }
     }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatingBack {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
