@@ -726,10 +726,12 @@
       .mockup-02 {
         top: 0.3rem;
         left: 25.8rem;
+        z-index: 2;
       }
       .circle {
         bottom: 0;
         right: 0;
+        z-index: 0;
       }
       img {
         position: absolute;
