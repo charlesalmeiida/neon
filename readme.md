@@ -1,7 +1,7 @@
-<h1 align="center"> Redesin - Banco NEON </h1>
+<h1 align="center"> Redesing - Banco NEON </h1>
 
 <p align="center">
-Landing page do <strong>Banco NEON</strong> desenvolvida durante o curso CodeBoost.
+Redesign da Landing page do <strong>Banco NEON</strong> desenvolvida durante o curso CodeBoost, com o objetivo de praticar as tecnologias e aperfeiçar a atenção aos detalhes ao replicar a página através do Figma.
 <br>
 </p>
 
