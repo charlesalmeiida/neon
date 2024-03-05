@@ -13,7 +13,64 @@ header {
     nav {
       display: flex;
       align-items: center;
+      position: relative;
       gap: 5.9rem;
+      .dropdown {
+        position: absolute;
+        z-index: 1;
+        top: 4.9rem;
+        left: -13rem;
+        width: 100%;
+        max-width: 37.3rem;
+        height: 41.7rem;
+        border-radius: 0.6rem;
+        background: white;
+        padding: 4rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+        transform: translateY(-20px);
+        .item {
+          &:not(:last-child) {
+            margin-bottom: 2.8rem;
+          }
+          strong {
+            color: $gray-400;
+            font-size: 1.6rem;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.4rem;
+            transition: all 0.3s ease;
+          }
+          p {
+            color: #8c8a97;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+          &:hover {
+            cursor: pointer;
+            strong {
+              color: $brand-blue;
+            }
+          }
+        }
+        &::after {
+          content: "";
+          bottom: 0;
+          position: absolute;
+          width: 29.3rem;
+          height: 0.5rem;
+          background: $brand-yellow;
+          border-radius: 1.2rem 1.2rem 0 0;
+        }
+        &.active {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateY(0);
+        }
+      }
       ul {
         display: flex;
         align-items: center;
