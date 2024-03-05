@@ -1,4 +1,5 @@
 header {
+  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -8,13 +9,54 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
+  transition: all 0.3s;
+  &.fixed-menu {
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    .container {
+      .logo {
+        background: url(../assets/svg/logo-color.svg);
+      }
+      nav {
+        ul {
+          li {
+            a {
+              color: $gray-400;
+              &:hover {
+                color: $brand-blue;
+              }
+            }
+          }
+        }
+        .btn-secondary {
+          color: $brand-blue;
+          border: 1px solid $brand-blue;
+          &:hover {
+            background-color: $brand-blue;
+            color: white;
+          }
+        }
+      }
+    }
+  }
   .container {
     @include flex(row, center, space-between);
+    .logo {
+      display: inline-block;
+      width: 13.2rem;
+      height: 3rem;
+      background: url(../assets/svg/logo-white.svg) no-repeat center center;
+      background-size: 100%;
+      transition: all 0.3s ease;
+    }
     nav {
       display: flex;
       align-items: center;
       position: relative;
       gap: 5.9rem;
+      transition: color 0.3s;
       .dropdown {
         position: absolute;
         z-index: 1;

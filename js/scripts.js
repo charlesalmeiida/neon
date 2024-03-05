@@ -9,3 +9,15 @@ function openDropdown(event) {
 btnDropdown.addEventListener("mouseover", openDropdown)
 
 dropdownMenu.addEventListener("mouseleave", openDropdown)
+
+const header = document.getElementById("js-header")
+
+function fixedMenu() {
+  if (window.pageYOffset <= 80) {
+    header.classList.remove("fixed-menu")
+  } else {
+    header.classList.add("fixed-menu")
+  }
+}
+
+document.addEventListener("scroll", fixedMenu)
